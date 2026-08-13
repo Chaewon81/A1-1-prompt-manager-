@@ -19,7 +19,7 @@ prompts = [
     }
 ]
 
-def show_menu():
+def show_menu():   
     print("1. 프롬프트 추가")
     print("2. 프롬프트 목록")
     print("3. 카테고리별 조회")
@@ -27,6 +27,12 @@ def show_menu():
     print("5. 프롬프트 상세 보기")
     print("6. 즐겨찾기 관리")
     print("0. 종료")
+
+def show_list():
+    print("===== 프롬프트 목록 =====")
+
+    for i, prompt in enumerate(prompts, start=1):
+        print(i, prompt["title"], "[", prompt["category"], "]")
 
 while True:
     show_menu()
@@ -36,7 +42,7 @@ while True:
     if choice == "1":
         print("프롬프트 추가를 선택했습니다.")
     elif choice == "2":
-        print("프롬프트 목록을 선택했습니다.")
+        show_list()
     elif choice == "3":
         print("카테고리별 조회를 선택했습니다.")
     elif choice == "4":
@@ -50,5 +56,4 @@ while True:
         break
     else:
         print("잘못된 번호입니다.")
-
 
