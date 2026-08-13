@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .vscode/
 .env
+step 1.py
+workflow.md
+과제.txt
