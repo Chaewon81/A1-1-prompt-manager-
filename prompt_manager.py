@@ -224,6 +224,7 @@ def favorite_menu():
         print("0. 돌아가기")
 
         choice = input("메뉴를 선택하세요: ")
+        print()  # ← 한 줄 띄어쓰기
 
         if choice == "1":
             toggle_favorite()
@@ -233,6 +234,7 @@ def favorite_menu():
             break
         else:
             print("잘못된 번호입니다.")
+            print()  # ← 한 줄 띄어쓰기
 
 
 while True:
